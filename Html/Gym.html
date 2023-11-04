@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandu's Gym project</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link rel = 'stylesheet' href = 'Css/StyleSheets.css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin : 0px;
+        padding : 0px;
+        color : white;
+        background-image: url('Gym_bg.jpg');
+        background-repeat : no-repeat;
+        margin : 0px;
+        padding : 0px;
+        font-size : 20px;
+        font-family: 'Inconsolata', monospace;
+        background-size : cover;
+    }
+    .left{
+       /* padding: 20px;*/
+        display : inline-block;
+        position : absolute;
+        left : 15px;
+        top : 20px; 
+    }
+    .right{
+        right : 16px;
+        position : absolute;
+        top : 20px; 
+        display : inline-block;
+    }
+    .mid{
+        display : block;
+        margin: 20px auto;
+        width : 30%;
+        padding : 0px 20px;
+    }
+    .nav{
+        display : inline-block;
+        text-decoration : none;
+        padding : 5px;
+        font-size : 20px;
+    }
+    .nav a:hover{
+        text-decoration: underline;
+        color : grey;
+        cursor: pointer;
+    }
+    .active{
+        text-decoration: underline;
+        color : grey;
+    }
+
+    .left img{
+        padding: 0px 20px;
+        width : 70px;
+        height: 70px;
+        background-size : cover;
+    }
+    .text {
+        text-align : centre;
+    }
+    .us{
+        cursor: pointer;
+        padding : 10px 10px;
+        border : 2px solid grey;
+        border-radius:10px;
+        color : white;
+        background-color: black;
+        font-size : 20px;
+        font-family: 'Inconsolata', monospace;
+    }
+    .us:hover{
+        background-color:white;
+        color:black;
+    }
+    .container{
+        border : 2px solid rgb(255, 255, 255);
+        margin : 130px;
+        display : block;
+        width : 30%;
+        padding : 10px;
+        border-radius : 20px;
+        text-align: center;
+    }
+    .form-group{
+        display : block;
+        padding : 4px;
+        margin : 2px auto;
+        width : 65%;
+        border-radius : 10px;
+    }
+    .form-group input {
+        font-size : 20px;
+        text-align: center;
+        font-size : 25px;
+        font-family: 'Inconsolata', monospace;
+    }
+    .form-group button{
+        margin : auto;
+    }
+</style>
+<body>
+    <header>
+        <div class = 'left'>
+            <img src = 'Logo.jpg' alt = "Logo">
+            <div class = "text"> Chandu's Gym </div>
+        </div>
+        <div class="right">
+            <button class = "us">Contact us</button>
+            <button class = "us">Email us</button>
+        </div>
+        <div class="mid">
+            <ul>
+                <li class = "nav"><a class = "active">Home</a></li>
+                <li class = "nav"><a>Fit Count</a></li>
+                <li class = "nav"><a>About</a></li>
+                <li class = "nav"><a>Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class=" container">
+        Welcome to Chandu's gym
+        <form action = "no.php">
+            <div class = "form-group"> 
+                <input type = "text" placeholder="Enter Name">
+            </div>
+            <div class = "form-group"> 
+                <input type = "text" placeholder="Enter Age">
+            </div>
+            <div class = "form-group"> 
+                <input type = "text" placeholder="Enter Phone Number">
+            </div>
+            <div class = "form-group"> 
+                <button class = "us">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
