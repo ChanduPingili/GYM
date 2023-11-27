@@ -1,2 +1,2 @@
 # GYM
-Its a basic html and css GYM webpage 
+It's a basic html and css webpage.
